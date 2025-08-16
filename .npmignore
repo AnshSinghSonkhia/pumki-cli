@@ -1,0 +1,39 @@
+# Ignore node_modules (should not be published)
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore build output
+dist/
+build/
+
+# Ignore test files and coverage
+test/
+tests/
+coverage/
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore editor and OS files
+.DS_Store
+Thumbs.db
+
+# Ignore config files not needed in package
+*.local.js
+*.local.json
+
+# Ignore npm debug files
+npm-debug.log*
+yarn-error.log*
+
+# Ignore lock files (optional)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore gitignore & npmignore files
+.gitignore
+.npmignore

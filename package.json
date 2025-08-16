@@ -1,0 +1,30 @@
+{
+  "name": "pumki",
+  "version": "1.0.0",
+  "description": "CLI for installing Pumki UI components",
+  "type": "module",
+  "bin": {
+    "pumki": "bin/pumki.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnshSinghSonkhia/pumki-cli.git"
+  },
+  "keywords": [
+    "pumki",
+    "pumki-ui",
+    "pumkiui",
+    "pumki-cli",
+    "cli",
+    "pumki-ui-cli"
+  ],
+  "author": "Ansh Singh Sonkhia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnshSinghSonkhia/pumki-cli/issues"
+  },
+  "homepage": "https://github.com/AnshSinghSonkhia/pumki-cli#readme",
+  "dependencies": {
+    "shelljs": "^0.10.0"
+  }
+}
