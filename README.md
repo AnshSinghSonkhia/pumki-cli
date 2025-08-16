@@ -42,12 +42,21 @@
 - Cross-platform support: macOS, Linux, Windows, WSL
 - Lightweight and blazing fast
 
----
-
 ## 📦 Installation
 
-### Global (recommended)
-Install once, use everywhere.
+### Option 1: Use with `npx` (recommended ✅)
+
+No installation needed — just run directly:
+
+> `npx pumki add <component-name>`
+```sh
+npx pumki add stats-carousel
+```
+
+### Option 2: Global install (for convenience)
+
+If you want to avoid typing `npx` every time:
+
 ```sh
 # npm
 npm i -g pumki
@@ -62,58 +71,54 @@ yarn global add pumki
 bun add -g pumki
 ```
 
-Then run:
+Then you can run:
+
 ```sh
 pumki add stats-carousel
-```
-
-### Local (per project)
-```sh
-npm i pumki
-```
-Then run:
-```sh
-pumki add stats-carousel
-```
-
-If above doesn't work, try running:
-```sh
-npx pumki add stats-carousel
 ```
 
 ---
 
 ## ⚡ Quickstart
-Add any component from pumki-ui into your project:
+
+Add any component from Pumki-UI into your project in one line:
+
 ```sh
-pumki add stats-carousel
+npx pumki add stats-carousel
 ```
-That’s it.  
+
+That’s it.
 Pumki **fetches the component JSON from pumki-ui and scaffolds it into your project**, integrating with your package manager automatically.
 
 ---
 
 ## 🛠 Usage
+
 ```sh
 # Add a component by name
-pumki add <component-name>
+npx pumki add <component-name>
 
 # Example
-pumki add stats-carousel
+npx pumki add stats-carousel
 ```
 
-💡 Tip:
-- Component names map to entries in [pumki-ui](https://github.com/AnshSinghSonkhia/pumki-ui/tree/main/public/r).
+💡 Tips:
+
+* Component names map to entries in [pumki-ui](https://github.com/AnshSinghSonkhia/pumki-ui/tree/main/public/r).
+* Want shorter commands? → Install globally and just run `pumki add …`.
 
 ---
 
 ## 📥 Example
+
 Command:
+
 ```sh
-pumki add stats-carousel
+npx pumki add stats-carousel
 ```
 
 Output:
+
 ```
 ✨ Adding stats-carousel from Pumki-UI...
 ✔ Component added successfully!
