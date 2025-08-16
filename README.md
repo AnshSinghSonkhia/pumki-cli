@@ -71,8 +71,12 @@ pumki add stats-carousel
 ```sh
 npm i pumki
 ```
-
 Then run:
+```sh
+pumki add stats-carousel
+```
+
+If above doesn't work, try running:
 ```sh
 npx pumki add stats-carousel
 ```
