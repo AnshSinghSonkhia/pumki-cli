@@ -100,9 +100,6 @@ pumki add <component-name>
 
 # Example
 pumki add stats-carousel
-
-# Check version
-pumki --version
 ```
 
 💡 Tip:
