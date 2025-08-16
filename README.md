@@ -44,14 +44,39 @@
 
 ## 📦 Installation
 
-### Option 1: Use with `npx` (recommended ✅)
+### Option 1: Use without installation (recommended ✅)
 
-No installation needed — just run directly:
+No installation needed — run directly with your package manager:
+
+#### npm
 
 > `npx pumki add <component-name>`
 ```sh
 npx pumki add stats-carousel
 ```
+
+#### pnpm
+```sh
+pnpm dlx pumki add stats-carousel
+```
+
+#### yarn
+```sh
+yarn dlx pumki add stats-carousel
+```
+#### Bun
+
+```sh
+# macOS/Linux
+bunx pumki add stats-carousel
+# or (works everywhere)
+bun x pumki add stats-carousel
+
+# Windows (PowerShell/CMD) — use this:
+bun x pumki add stats-carousel
+```
+
+Note: bunx is a symlink available on macOS/Linux. On Windows, use bun x.
 
 ### Option 2: Global install (for convenience)
 
