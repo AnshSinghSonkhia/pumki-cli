@@ -27,7 +27,7 @@
 - [Installation](#-installation)
 - [Quickstart](#-quickstart)
 - [Usage](#-usage)
-- [Doctor Command](#-doctor-command)
+- [Doctor Command](#doctor-command)
 - [Example](#-example)
 - [Components](#-components)
 - [Troubleshooting](#-troubleshooting)
