@@ -27,6 +27,7 @@
 - [Installation](#-installation)
 - [Quickstart](#-quickstart)
 - [Usage](#-usage)
+- [Doctor Command](#-doctor-command)
 - [Example](#-example)
 - [Components](#-components)
 - [Troubleshooting](#-troubleshooting)
@@ -39,8 +40,30 @@
 - One-liner component install
 - Auto-detects and uses your package manager
 - Fetches components directly from <a href="https://github.com/AnshSinghSonkhia/pumki-ui">pumki-ui</a>
+- Built on top of shadcn/ui ecosystem
 - Cross-platform support: macOS, Linux, Windows, WSL
 - Lightweight and blazing fast
+
+## ⚠️ Prerequisites
+
+Pumki works with projects that use **shadcn/ui + Tailwind CSS**.
+
+You must initialize shadcn once in your project:
+
+```sh
+npx shadcn@latest init
+```
+
+This sets up:
+- `components.json`
+- Tailwind integration
+- required project structure
+
+💡 You can verify your setup anytime using:
+
+```bash
+npx pumki doctor
+```
 
 ## 📦 Installation
 
@@ -113,7 +136,7 @@ npx pumki add stats-carousel
 ```
 
 That’s it.
-Pumki **fetches the component JSON from pumki-ui and scaffolds it into your project**, integrating with your package manager automatically.
+Pumki **fetches the component JSON from pumki-ui and scaffolds it into your project**.
 
 ---
 
@@ -133,6 +156,30 @@ npx pumki add stats-carousel
 * Want shorter commands? → Install globally and just run `pumki add …`.
 
 ---
+
+
+## Doctor Command
+
+check if your project is properly configured:
+
+```bash
+npx pumki doctor
+```
+
+Example output:
+
+```bash
+✔ Project detected
+✔ React found
+✔ Tailwind configured
+✖ shadcn/ui is not initialized
+⚠ Missing dependencies: clsx, tailwind-merge
+
+Fix suggestions:
+- Run: npx shadcn@latest init
+- Install: npm install clsx tailwind-merge
+```
+
 
 ## 📥 Example
 
@@ -168,6 +215,28 @@ Browse the full catalog:
 - **Wrong package manager being used**  
   - Pumki auto-detects, but you can ensure a lockfile (`package-lock.json`, `pnpm-lock.yaml`, `yarn.lock`, `bun.lockb`) exists before running.
   - If none exist, it defaults to **npm**.
+
+- **shadcn not initialized**
+    - `❌ shadcn/ui is not initialized`
+    - Fix: ```npx shadcn@latest init```
+
+- **npm error ENOTEMPTY / npx issues**
+    - Fix: ```npm cache clean --force```
+    - Or delete: `C:\Users\<your-user>\AppData\Local\npm-cache\_npx`
+
+### Command not found
+
+- Global install → use pumki add <component>
+- Otherwise → use npx pumki add <component>
+
+### Wrong package manager
+
+Ensure lockfile exists:
+
+- package-lock.json
+- pnpm-lock.yaml
+- yarn.lock
+- bun.lockb
 
 If you hit an issue, please open an issue with your OS, Node version, package manager, and command used.
 
